@@ -1,4 +1,4 @@
-# GM-TOuNN: Graded Multiscale Topology Optimization using  Neural Networks]{GM-TOuNN: Graded Multiscale Topology Optimization using  Neural Networks
+# GM-TOuNN: Graded Multiscale Topology Optimization using  Neural Networks
 
 [Aaditya Chandrasekhar*](https://aadityacs.github.io/), [Saketh Sridhara*](https://sakethsridhara.github.io/), [Krishnan Suresh](https://directory.engr.wisc.edu/me/faculty/suresh_krishnan)  
 University of Wisconsin-Madison 
