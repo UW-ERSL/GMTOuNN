@@ -69,9 +69,9 @@ def getExampleBC(example, nelx, nely, elemSize):
     forceNodes = np.arange(2*(nelx+1)*(nely+1)-2*nely+1,\
                            2*(nelx+1)*(nely+1), 2)
     bcSettings = {'fixedNodes': np.arange(0,2*(nely+1),1),\
-                  'forceMagnitude': -4.76,\
+                  'forceMagnitude': -100.,\
                   'forceNodes': forceNodes,\
-                  'dofsPerNode':2}
+                  'dofsPerNode':2} # multiplyy C by 1000 to replicate
     symMap = {'XAxis':{'isOn':True, 'midPt':0.5*nely*elemSize[1]},\
       'YAxis':{'isOn':False, 'midPt':0.5*nelx*elemSize[0]}}
 
