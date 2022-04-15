@@ -39,7 +39,7 @@ class TOuNN:
     if(self.fourierMap['isOn']):
       xyF = applyFourierMap(xyR, self.fourierMap)
     else:
-      xyF = xyS
+      xyF = xyR
     penal = 1
     
     # C Matrix
@@ -162,7 +162,7 @@ class TOuNN:
     if(self.fourierMap['isOn']):
       xyF = applyFourierMap(xyR, self.fourierMap)
     else:
-      xyF = xyS
+      xyF = xyR
     mstrType, density = self.topNet.forward(self.topNet.wts, xyF)
     
     fillColors = ['white', (1,0,0), (0,1,0), (0,0,1), (0,0,0), (0,1,1),\
@@ -179,7 +179,7 @@ class TOuNN:
     colorImg = np.zeros((NX, NY))
     densityImg = np.zeros((NX, NY))
     maxC = 0
-    step = 0.01 # THIS IS THE STEP USED WHEN GEN THE MSTR IMAGES! HC FOR NOW
+    step = 0.01 # step used when gen mstr images!
     cutOff = 0.98 # val above which its a dark square
     for elem in range(xy.shape[0]):
       cx = int((res*xy[elem,0])/self.FE.mesh.elemSize[0])
