@@ -16,7 +16,7 @@ In this paper, we propose to meet these requirements by exploiting the unique cl
 
 ```
 @article{chand2022GMTOuNN,
-author = {Chandrasekhar, Aaditya* and Sridhara, Saketh* and Suresh, Krishnan},
+author = {Chandrasekhar, Aaditya and Sridhara, Saketh and Suresh, Krishnan},
 title = {GM-TOuNN: Graded Multiscale Topology Optimization using  Neural Networks},
 journal = {arXiv preprint arXiv:2204.06682},
 year={2022}
